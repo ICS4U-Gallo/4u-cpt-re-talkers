@@ -1,26 +1,26 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+<%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE HTML >
 <html>
   <head>
-    <base href="<%=basePath%>">
     
-    <title>My JSP 'index.jsp' starting page</title>
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
+    <title>My Chat Room</title>
   </head>
   
   <body>
-    This is my JSP page. <br>
+  
+    <h1>Public Chat Room</h1>
+    
+    <!--This page goes first-->
+    
+    <form action = "loadMes.jsp?action=login" method = "post">
+    <input type = "text" name = "username" id = "username"/><br />
+    <input type = "password" name = "password" id = "password"/><br />
+    <input type = "submit" name = "submit" value = "submit" /><br />
+    <input type = "reset" name = "reset" value = "reset" /><br />
+    
+    </form>
+   
   </body>
+  
 </html>
